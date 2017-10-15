@@ -28,6 +28,11 @@ public:
   * A helper method to calculate Jacobians.
   */
   MatrixXd CalculateJacobian(const VectorXd& x_state);
+  
+  /**
+   * TODO: build cartezian to polar and vice versa helper methods.
+  * A helper method that converts polar coordiantes
+  */
 
 };
 

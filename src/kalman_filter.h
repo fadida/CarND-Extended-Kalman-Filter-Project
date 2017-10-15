@@ -3,6 +3,13 @@
 #include "Eigen/Dense"
 
 class KalmanFilter {
+private:
+    /**
+     * Calculates the prdicted vector for extended kalman filter calculation.
+     * Uses the formula: z_pred = h(x_pred)
+     * @return: z_pred, the predictions vector in polar coordinates.
+     */
+    void CalculateExtPredVec(Eigen::VectorXd& z_pred);
 public:
 
   // state vector
