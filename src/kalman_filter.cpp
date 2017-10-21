@@ -2,8 +2,6 @@
 #include <iostream>
 
 #define PI 3.14159265
-#define DEBUG_PRINT
-//#define DEBUG_PRINT std::cout << __FILE__ << ":" <<  __LINE__ << std::endl;
 
 using Eigen::MatrixXd;
 using Eigen::VectorXd;
