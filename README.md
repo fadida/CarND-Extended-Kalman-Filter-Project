@@ -6,11 +6,9 @@ uses extended Kalman filter in order to predict vehicle position from
 radar and lidar sensors.
 
 ## The algorithm
-The core algorithm this project uses the initial measurements in order to initialize the Kalman filter.
-The main idea is to predict first and then update the location and state using the current measurements.
+The first step in the algorithm is taking the initial measurements in order to initialize the Kalman filter.
 
-Because the measurements can be sent from two different sensors that work in different coordinate systems,
-the update function for each sensor need to differ:
+After initialization, the alogrithm is built to predict first and then update the location and state using the current measurements using a different update method for each sensor:
 * lidar measurements update method is using regular Kalman filter because this sensor has a linear state function h(x).
 * radar measurements update method is using extended Kalman filter because this sensor has a non-linear state function h(x) (arctg function)
 
